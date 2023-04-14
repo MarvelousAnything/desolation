@@ -1,0 +1,10 @@
+[workspace]
+members = [
+  "compiler/desolationc",
+  "compiler/desolationc_tests"
+]
+
+[workspace.dependencies]
+thiserror = "1.0.40"
+miette = { version = "5.7.0", features = ["fancy"]}
+tracing = "0.1.37"

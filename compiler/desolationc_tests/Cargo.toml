@@ -1,0 +1,7 @@
+[package]
+name = "desolationc_tests"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+desolationc_proc_macros = { path = "../desolationc_proc_macros" }

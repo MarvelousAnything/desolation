@@ -1,0 +1,12 @@
+[package]
+name = "desolationc"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+desolationc_proc_macros = { path = "../desolationc_proc_macros" }
+desolationc_tokens = { path = "../desolationc_tokens"}
+desolationc_ast = { path = "../desolationc_ast" }
+desolationc_lexer = { path = "../desolationc_lexer" }
