@@ -6,4 +6,8 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+thiserror.workspace = true
+miette.workspace = true
+tracing.workspace = true
 desolationc_tokens = { path = "../desolationc_tokens" }
+

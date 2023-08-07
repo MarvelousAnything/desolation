@@ -101,6 +101,9 @@ name = "desolationc_lexer"
 version = "0.1.0"
 dependencies = [
  "desolationc_tokens",
+ "miette",
+ "thiserror",
+ "tracing",
 ]
 
 [[package]]

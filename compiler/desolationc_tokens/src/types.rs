@@ -3,7 +3,7 @@ use desolationc_proc_macros::{stringify_lower, length, split_lexeme};
 macro_rules! keyword_enum {
     ($($keyword:ident),+) => {
         #[derive(Debug, Eq, PartialEq, Clone)]
-        pub(crate) enum KeywordToken {
+        pub enum KeywordToken {
             $($keyword),+
         }
 
@@ -33,7 +33,7 @@ macro_rules! keyword_enum {
 macro_rules! syntax_enum {
     ($($token:ident => $lexeme:literal),+) => {
         #[derive(Debug, Eq, PartialEq, Clone)]
-        pub(crate) enum SyntaxToken {
+        pub enum SyntaxToken {
             $($token),+
         }
 
@@ -83,14 +83,14 @@ syntax_enum!{
 }
 
 #[derive(Debug, PartialEq, Eq, Clone)]
-pub(crate) enum LiteralToken {
+pub enum LiteralToken {
     Character(char),
     Integer(i64),
     StringToken(String),
 }
 
 #[derive(Debug, Eq, PartialEq, Clone)]
-pub(crate) enum TokenType {
+pub enum TokenType {
     Keyword(KeywordToken),
     Syntax(SyntaxToken),
     Identifier(String),
